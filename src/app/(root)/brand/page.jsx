@@ -125,7 +125,7 @@ export default function BrandDashboard() {
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
             {/* Stats Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                 <Card
                     title="Total Brands"
                     value={stats.total}
@@ -137,6 +137,7 @@ export default function BrandDashboard() {
                 />
 
                 <Card
+                    isDark
                     title="Active Brands"
                     value={stats.active}
                     icon={CheckCircle}

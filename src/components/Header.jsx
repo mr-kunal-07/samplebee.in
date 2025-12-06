@@ -106,7 +106,7 @@ export default function Header({ onMenuClick }) {
                     {/* Contact Support */}
                     <button
                         onClick={() => window.open("https://wa.me/9920655685", "_blank")}
-                        className="hidden  sm:flex items-center gap-2 px-4 py-2.5 text-gray-700 hover:bg-green-50 rounded-lg transition-all border border-gray-300 hover:border-green-400 hover:text-green-600 active:scale-95 group"
+                        className="hidden cursor-pointer  sm:flex items-center gap-2 px-4 py-2.5 text-gray-700 hover:bg-green-50 rounded-lg transition-all border border-gray-300 hover:border-green-400 hover:text-green-600 active:scale-95 group"
                     >
                         <div className="relative flex items-center justify-center">
                             <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform" />

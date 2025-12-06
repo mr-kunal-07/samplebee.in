@@ -86,7 +86,7 @@ const Card = ({
         hover:shadow-md 
         transition-all 
         duration-200
-        p-6
+        p-4
         border
         hover:scale-[1.02]
         ${className}
@@ -134,8 +134,8 @@ const Card = ({
             )}
 
             {/* Footer */}
-            <div className="flex items-center gap-2 text-sm pt-4 border-t border-gray-200/10">
-                {footerIcon && (
+            {footerIcon && (
+                <div className="flex items-center gap-2 text-sm pt-4 border-t border-gray-200/10">
                     <span className={`font-semibold ${footerIcon.includes('↑')
                         ? 'text-green-500'
                         : footerIcon.includes('↓')
@@ -144,11 +144,11 @@ const Card = ({
                         }`}>
                         {footerIcon}
                     </span>
-                )}
-                <span className={`${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
-                    {footerText || footer}
-                </span>
-            </div>
+                    <span className={`${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+                        {footerText || footer}
+                    </span>
+                </div>
+            )}
         </div>
     );
 };

@@ -2,15 +2,13 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Folder, ClipboardList, Users, FileText, Smartphone, CreditCard, HelpCircle, Star, X, Package, Plus } from 'lucide-react';
+import { Home, Folder, ClipboardList, Users, FileText, Smartphone, CreditCard, HelpCircle, Star, X, Package, Plus, Fullscreen } from 'lucide-react';
 
 const sections = [
     {
         title: 'DASHBOARD',
         items: [
             { label: 'Overview', icon: Home, href: '/dashboard' },
-            { label: 'Promotor', icon: Users, href: '/promotor' },
-
         ]
     },
     {
@@ -23,8 +21,15 @@ const sections = [
     {
         title: 'CAMPAGINS',
         items: [
-            { label: 'Campagins Overview', icon: CreditCard, href: '/campagin' },
+            { label: 'Campagins Overview', icon: Fullscreen, href: '/campagin' },
             { label: 'New Campagin ', icon: Plus, href: '/campagin/create-campagin' }
+        ]
+    },
+    {
+        title: 'PROMOTOR',
+        items: [
+            { label: 'Promotor Overview', icon: Users, href: '/promotor' },
+            { label: 'New Promotor ', icon: Plus, href: '/promotor/create-promotor' }
         ]
     },
     {
